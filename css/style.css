@@ -29,7 +29,7 @@ h2 {
  
 label {
   font-family: 'Lato', 'Helvetica', sans-serif;
-  font-weight: 700;
+  font-weight: 500;
   font-size: 16px;
   color: rgba(0, 0, 0, 0.8);
 }
@@ -72,15 +72,20 @@ canvas {
 
 /* Control Styles */
 .controls {
-  width: 300px;
+  width: 268px;
+  padding: 15px;
+  background: url('../img/textured_paper.png');
+  box-shadow: inset 1px 1px 8px rgba(0, 0, 0, 0.2);
 }
 
 /* Only works in Safari & Chrome */
 input[type='range'] {
  display: block;
+ width: 240px;
+ margin-bottom: 15px;
 }
 
-input[type='range']::-webkit-slider-thumb {
- width: 10px;
- height: 10px;
+input[type='range']:last-child {
+  margin-bottom: 0;
+}
 }
