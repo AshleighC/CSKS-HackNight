@@ -1,0 +1,152 @@
+/* Styles here will affect the ENTIRE body of the page */
+body {
+  /* Sets the margin and padding to 0. Don't worry about this right now! */
+  margin: 0;
+  padding: 0;
+
+  /* Changes the Background */
+  background: url('../img/linedpaper.png');
+}
+
+/* You can apply styles to multiple selectors.
+   Here we apply selectors to both <h1> and <h2> tags! */
+h1,
+h2 {
+  /* Changes font for <h1> and <h2> tags
+     The page will first try to load 'Oswald',
+     If that fails, then it will try to load the 
+     following fonts */
+  font-family: 'Oswald', 'Lato', 'Helvetica', sans-serif;
+}
+
+/* This applies styles to only <h1> tags */
+h1 {
+  /* Sets font size for <h1> */
+  font-size: 40px;
+
+  /* Changes the color of the text.
+     RGBA stands for red, green, blue, and alpha.
+     Alpha is the transparency. */
+  color: rgba(0, 0, 0, 0.8);
+}
+
+/* This applies styles to only <h2> tags */
+h2 {
+  /* Sets font size and color for <h2> */
+  font-size: 20px;
+  color: rgba(0, 0, 0, 0.5);
+
+  /* Some complicated positioning. Don't worry about this */
+  /* BUT. If you want to know, basically, position: absolute means
+     that you want to tell the element exactly where to go. Here,
+     I set the left value to 20px, so the element moves 20px to the
+     left relative to the div it is within */
+  position: absolute;
+  left: 20px;
+}
+ 
+/* This applies styles to only <label> tags */
+label {
+  /* Style font of label */
+  /* Family | Weight | Size | Color */
+  font-family: 'Lato', 'Helvetica', sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  color: rgba(0, 0, 0, 0.8);
+}
+
+/* A fieldset is basically a group of information in a form.
+   In our case, we're grouping a label with an input */
+fieldset {
+  /* Setting the border to none! */
+  border: none;
+}
+
+/* This affects the elements with the class before or after */
+.before,
+.after {
+  position: relative; /* Don't worry about this */
+  height: 300px;      /* Sets the height of the element to 300px */
+}
+
+/* Affects elements with the class 'content' */
+.content {
+  /* This basically centers the element */
+  margin: 0 auto;
+  width: 720px;
+  overflow: hidden; /* Clearfix! Google if you want to learn about this. */
+}
+
+/* Affects elements with the classes 'video-streams' or 'controls' */
+.video-streams,
+.controls {
+  /* Floats Items: Floating basically pushes elements in one direction */
+  float: left;
+}
+
+/* Styling the controls div */
+.controls {
+  /* Sets width of the controls div to 268px */
+
+  width: 268px;
+  /* Add padding */
+  /* Change background of controls */
+  /* Box Shadow Inset */
+  padding: 15px;
+  background: url('../img/white_wall_hash.png');
+  box-shadow: inset 1px 1px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Styling the 'save' button */
+#save {
+  /* The button will float the right of the div it is in! */
+  float: right;
+
+  /* Rounded corners! */
+  border-radius: 8px;
+
+  /* Adds padding to the button, basically, it puts 'breathing room' around the text */
+  padding: 8px;
+  background: white;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+/* Styles on hover for 'save' button! */
+#save:hover {
+  /* On hover, the cursor will change into a pointer */
+  cursor: pointer;
+  /* Changes the opacity to 0.8 on hover */
+  opacity: 0.8;
+}
+
+/* Video Styles: Don't touch anything below here! */
+.video-streams {
+  width: 400px;
+  margin-right: 20px;
+}
+
+header {
+  width: 100%;
+  text-align: center;
+  margin-bottom: -10px;
+}
+
+video,
+canvas {
+  display: block;
+}
+
+canvas {
+  margin-top: 20px;
+}
+
+/* Only works in Safari & Chrome */
+input[type='range'] {
+ display: block;
+ width: 248px;
+ margin-bottom: 15px;
+}
+
+input[type='range']:last-child {
+  margin-bottom: 0;
+}

@@ -1,0 +1,101 @@
+body {
+  margin: 0;
+  padding: 0;
+
+  /* Change the Background */
+}
+
+h1,
+h2 {
+  /* Style headings 1 & 2 */
+}
+
+h1 {
+  /* Style heading 1 */
+}
+
+h2 {
+  /* Style heading 2 */
+  /* Font Size */
+  /* Color */
+
+  /* Some complicated positioning */
+  position: absolute;
+  left: 20px;
+}
+ 
+label {
+  /* Style font of label */
+  /* Family | Weight | Size | Color */
+}
+
+fieldset {
+  border: none;
+}
+
+.before,
+.after {
+  position: relative;
+  height: 300px;
+}
+
+.content {
+  margin: 0 auto;
+  width: 720px;
+  overflow: hidden;
+}
+
+.video-streams,
+.controls {
+  /* Float Items */
+}
+
+/* Control Styles */
+.controls {
+  width: 268px;
+  /* Add padding */
+  /* Change background of controls */
+  /* Box Shadow Inset */
+}
+
+#save {
+  /* Float save button */
+  /* Style the button */
+}
+
+#save:hover {
+  /* Cursor Style */
+  /* Opacity */
+}
+
+/* Video Styles: Don't touch anything below here! */
+.video-streams {
+  width: 400px;
+  margin-right: 20px;
+}
+
+header {
+  width: 100%;
+  text-align: center;
+  margin-bottom: -10px;
+}
+
+video,
+canvas {
+  display: block;
+}
+
+canvas {
+  margin-top: 20px;
+}
+
+/* Only works in Safari & Chrome */
+input[type='range'] {
+ display: block;
+ width: 248px;
+ margin-bottom: 15px;
+}
+
+input[type='range']:last-child {
+  margin-bottom: 0;
+}

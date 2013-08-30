@@ -1,0 +1,84 @@
+<html>
+
+  <!-- The head is where you place scripts, links to stylesheets, and meta tags. It is also where the title of the page resides. -->
+
+  <head>
+    <title>CS KickStart: Ghetto Instagram</title>
+
+    <!-- Loading all the scripts -->
+    <script src="js/jquery.js"></script>
+    <script src="server.js"></script>
+    <script src="js/video.js"></script>
+    <script src="js/effects.js"></script>
+    <script src="js/change.js"></script>
+    <script src="js/save.js"></script>
+
+    <!-- Links to the Stylesheet (Stuff that makes the page prettier) -->
+    <link href="css/style.css" rel="stylesheet">
+
+    <!-- Links to special Web Fonts - Allows you to use special fonts on the web -->
+    <link href='http://fonts.googleapis.com/css?family=Lato|Oswald' rel='stylesheet' type='text/css'>
+  </head>
+
+  <body>
+
+    <!-- Where the content of the page goes  -->
+    <div class="content">
+
+      <!-- Header Tag: Where the header of the page goes. This can include photos, headlines, etc. -->
+      <header>
+        <!-- This is a heading 1 of the page. H1 tags are always the biggest text on the page because they are the most important. -->
+        <h1>GHETTO INSTAGRAM</h1>
+      </header>
+
+      <!-- The video streams contains both the before and after videos. Classes are used for styling in the CSS -->
+      <div class="video-streams">  
+
+        <!-- Before video  -->
+        <div class="before">
+          <h2>BEFORE</h2>
+          <!-- Video Stream -->
+          <video id="video" width="400px"></video>
+        </div>
+
+        <div class="after">
+          <h2>AFTER</h2>
+          <!-- Video Stream after effects -->
+          <canvas id="c" width="400px"></canvas>
+        </div>
+      </div> <!-- End video-streams tag -->
+
+      <!-- Div for the controllers -->
+      <div class="controls">
+
+        <!-- Controls Brightness -->
+        <fieldset>
+          <label>Brightness</label>
+          <input type="range" min="0" max="150" value="75" step="1" onchange="changeVideo(0, this.value)"></input>
+        </fieldset>
+
+        <!-- Controls Red Scale -->
+        <fieldset>
+          <label>Red Scale</label>
+          <input type="range" min="0" max="150" value="75" step="1" onchange="changeVideo(1, this.value)"></input>
+        </fieldset>
+
+        <!-- Controls Green Scale -->
+        <fieldset>
+          <label>Green Scale</label>
+          <input type="range" min="0" max="150" value="75" step="1" onchange="changeVideo(2, this.value)"></input>
+        </fieldset>
+
+        <!-- Controls Blue Scale -->
+        <fieldset>
+          <label>Blue Scale</label>
+          <input type="range" min="0" max="150" value="75" step="1" onchange="changeVideo(3, this.value)"></input>
+        </fieldset>
+
+        <!-- The Save Button -->
+        <button id="save">Save</button>
+      </div> <!-- End Controls tag -->
+    </div> <!-- End Content -->
+
+  </body>
+</html>
