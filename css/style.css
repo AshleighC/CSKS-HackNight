@@ -1,0 +1,91 @@
+body {
+  background: url('../img/linedpaper.png');
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  width: 100%;
+  text-align: center;
+  margin-bottom: -10px;
+}
+
+h1,
+h2 {
+  font-family: 'Oswald', 'Lato', 'Helvetica', sans-serif;
+}
+
+h1 {
+  font-size: 40px;
+  color: rgba(0, 0, 0, 0.8);
+}
+
+h2 {
+  font-size: 20px;
+  color: rgba(255, 255, 255, 0.5);
+  position: absolute;
+  left: 20px;
+}
+ 
+label {
+  font-family: 'Lato', 'Helvetica', sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  color: rgba(0, 0, 0, 0.8);
+}
+
+fieldset {
+  border: none;
+}
+
+.before,
+.after {
+  position: relative;
+  height: 300px;
+}
+
+.content {
+  margin: 0 auto;
+  width: 720px;
+  overflow: hidden;
+}
+
+.video-streams,
+.controls {
+  float: left;
+}
+
+/* Video Styles */
+.video-streams {
+  width: 400px;
+  margin-right: 20px;
+}
+
+video,
+canvas {
+  display: block;
+}
+
+canvas {
+  margin-top: 20px;
+}
+
+/* Control Styles */
+.controls {
+  width: 268px;
+  padding: 15px;
+  background: url('../img/white_wall_hash.png');
+  box-shadow: inset 1px 1px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Only works in Safari & Chrome */
+input[type='range'] {
+ display: block;
+ width: 240px;
+ margin-bottom: 15px;
+}
+
+input[type='range']:last-child {
+  margin-bottom: 0;
+}
+}
